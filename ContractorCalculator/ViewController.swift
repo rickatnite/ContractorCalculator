@@ -23,24 +23,22 @@ class ViewController: UIViewController {
         labor = Double(txtLabor.text!)
         var materials:Double? = nil
         materials = Double(txtMaterials.text!)
-        
         if labor != nil && materials != nil {
             let sub = labor! + materials!
             let tax = sub * 0.05
             let total = sub + tax
-            let subTxt = "$\(sub)"
-            let taxTxt = "$\(tax)"
-            let totTxt = "$\(total)"
+            let subTxt = String(format: "$%.2f", sub)
+            let taxTxt = String(format: "$%.2f", tax)
+            let totTxt = String(format: "$%.2f", total)
             lblSubtotal.text = subTxt
             lblTax.text = taxTxt
             lblTotal.text = totTxt
         }
-        
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
