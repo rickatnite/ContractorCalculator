@@ -56,6 +56,9 @@
                                         <rect key="frame" x="0.0" y="108" width="300" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Calculate"/>
+                                        <connections>
+                                            <action selector="btnCalculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OZz-fJ-tkv"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SM3-o3-ayI">
                                         <rect key="frame" x="0.0" y="159" width="300" height="20.5"/>
@@ -121,6 +124,14 @@
                             <constraint firstItem="paQ-2l-WuA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cLK-Wp-dRm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="calcBtnOutlet" destination="4rs-OI-jit" id="HLp-k4-eIn"/>
+                        <outlet property="lblSubtotal" destination="6Rq-m7-wtx" id="arq-Us-xVv"/>
+                        <outlet property="lblTax" destination="R1q-rw-QPM" id="olz-bD-hz6"/>
+                        <outlet property="lblTotal" destination="Ue7-OG-vCY" id="HOp-ya-d8y"/>
+                        <outlet property="txtLabor" destination="8f6-Ah-oUz" id="4du-mu-eCF"/>
+                        <outlet property="txtMaterials" destination="Vpq-bU-wCf" id="v5X-il-dJ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
